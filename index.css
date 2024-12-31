@@ -1,0 +1,220 @@
+/* Estilo global para todos os elementos */
+* {
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura do elemento */
+  font-family: 'Montserrat', sans-serif; /* Define a fonte Montserrat como padrão para todo o texto */
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
+}
+
+/* Estilo do corpo da página */
+body {
+  color: #263138; /* Define a cor do texto como um tom escuro */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FF9A6C; /* Define a cor de fundo do cabeçalho */
+  display: flex; /* Utiliza flexbox para layout do cabeçalho */
+  justify-content: space-between; /* Espaça os itens dentro do cabeçalho, colocando espaço entre eles */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding-top: 24px; /* Adiciona padding superior */
+  padding-bottom: 24px; /* Adiciona padding inferior */
+  padding-left: 80px; /* Adiciona padding à esquerda */
+  padding-right: 80px; /* Adiciona padding à direita */
+}
+
+header a {
+  color: #FFFFFF; /* Define a cor do texto dos links como branco */
+  font-weight: 600; /* Define o peso da fonte como semi-negrito */
+  padding: 0 32px; /* Adiciona padding horizontal (esquerda e direita) aos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Seção inicial */
+#inicio {
+  display: flex; /* Utiliza flexbox para layout na seção inicial */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 32px; /* Adiciona espaço entre os itens */
+  padding: 24px 80px 128px 80px; /* Adiciona padding nas direções superior, direita, inferior e esquerda */
+  position: relative; /* Permite que elementos filhos sejam posicionados em relação a esta seção */
+}
+
+h1,
+h2 {
+  font-weight: 600; /* Define o peso da fonte como semi-negrito para os títulos */
+  font-size: 32px; /* Define o tamanho da fonte dos títulos */
+  margin-bottom: 32px; /* Adiciona margem inferior aos títulos */
+}
+
+.paragrafo {
+  line-height: 150%; /* Define a altura da linha para melhorar a legibilidade */
+  margin-bottom: 32px; /* Adiciona margem inferior aos parágrafos */
+}
+
+.botao {
+  background-color: #FF725E; /* Define a cor de fundo do botão */
+  border-radius: 8px; /* Adiciona bordas arredondadas ao botão */
+  color: #FFFFFF; /* Define a cor do texto do botão como branco */
+  padding: 16px 32px; /* Adiciona padding ao botão (superior/inferior e esquerda/direita) */
+  text-decoration: none; /* Remove o sublinhado do texto do botão */
+}
+
+.botao-transparente {
+  background-color: transparent; /* Define o fundo do botão como transparente */
+  color: #FF725E; /* Define a cor do texto do botão transparente */
+  padding: 16px 32px; /* Adiciona padding ao botão (superior/inferior e esquerda/direita) */
+  text-underline-offset: 4px; /* Define o deslocamento do sublinhado em relação ao texto */
+}
+
+.absolute {
+  position: absolute; /* Posiciona o elemento de forma absoluta em relação ao seu pai posicionado */
+  bottom: 0; /* Alinha o elemento na parte inferior do seu pai */
+  left: 0; /* Alinha o elemento à esquerda do seu pai */
+  width: 100%; /* Define a largura do elemento como 100% do seu pai */
+  z-index: -10; /* Define a ordem de empilhamento do elemento, colocando-o atrás de outros elementos */
+}
+
+/* Seção clínica */
+#clinica {
+  display: flex; /* Utiliza flexbox para layout na seção clínica */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 64px; /* Adiciona espaço entre os itens */
+  padding: 64px 80px; /* Adiciona padding nas direções superior/inferior e esquerda/direita */
+}
+
+#clinica li {
+  margin-bottom: 16px; /* Adiciona margem inferior aos itens da lista */
+  margin-left: 32px; /* Adiciona margem à esquerda dos itens da lista */
+}
+
+/* Seção petshop e farmácia */
+#farmacia {
+  padding: 64px 80px; /* Adiciona padding nas direções superior/inferior e esquerda/direita */
+  text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+#farmacia img {
+  margin: 64px auto; /* Adiciona margem superior e inferior, centralizando a imagem horizontalmente */
+}
+
+#farmacia .paragrafo {
+  max-width: 950px; /* Define a largura máxima do parágrafo */
+  margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+/* Seção dúvidas frequentes */
+#duvidas {
+  display: flex; /* Utiliza flexbox para layout na seção de dúvidas */
+  align-items: start; /* Alinha os itens ao topo da seção */
+  gap: 64px; /* Adiciona espaço entre os itens */
+  padding: 64px 80px; /* Adiciona padding nas direções superior/inferior e esquerda/direita */
+}
+
+.duvida {
+  position: relative; /* Permite que elementos filhos sejam posicionados em relação a este elemento */
+}
+
+.duvida h3 {
+  border: 2px solid #FF725E; /* Adiciona uma borda ao redor do título da dúvida */
+  border-radius: 8px; /* Adiciona bordas arredondadas ao título da dúvida */
+  cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+  display: block; /* Faz com que o título ocupe toda a largura disponível */
+  padding: 24px; /* Adiciona padding ao título da dúvida */
+}
+
+.duvida img {
+  position: absolute; /* Posiciona a imagem de forma absoluta em relação ao elemento pai */
+  top: 32px; /* Alinha a imagem 32px do topo do elemento pai */
+  right: 24px; /* Alinha a imagem 24px da direita do elemento pai */
+}
+
+.duvida .paragrafo {
+  border-right: 1px solid #FF725E; /* Adiciona uma borda à direita do parágrafo */
+  border-bottom: 1px solid #FF725E; /* Adiciona uma borda na parte inferior do parágrafo */
+  border-left: 1px solid #FF725E; /* Adiciona uma borda à esquerda do parágrafo */
+  border-radius: 0 0 8px 8px; /* Arredonda as bordas inferiores do parágrafo */
+  margin-top: -8px; /* Move o parágrafo para cima, sobrepondo a borda do título */
+  padding: 0 24px; /* Adiciona padding horizontal ao parágrafo */
+  height: 0; /* Define a altura inicial do parágrafo como 0, ocultando-o */
+  opacity: 0; /* Define a opacidade inicial do parágrafo como 0, tornando-o invisível */
+  overflow: hidden; /* Oculta qualquer conteúdo que exceda a altura do parágrafo */
+  transition: .2s; /* Adiciona uma transição suave para mudanças de altura e opacidade */
+}
+
+.duvida.ativa .paragrafo {
+  height: fit-content; /* Ajusta a altura do parágrafo para caber seu conteúdo */
+  opacity: 1; /* Torna o parágrafo visível */
+  padding: 24px; /* Adiciona padding ao parágrafo quando ativo */
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(255, 152, 108, 0.25); /* Define uma cor de fundo semitransparente para o rodapé */
+  display: flex; /* Utiliza flexbox para layout do rodapé */
+  justify-content: space-between; /* Espaça os itens dentro do rodapé, colocando espaço entre eles */
+  gap: 80px; /* Adiciona espaço entre os itens do rodapé */
+  padding: 64px 80px; /* Adiciona padding nas direções superior/inferior e esquerda/direita */
+}
+
+footer img,
+footer .titulo {
+  display: block; /* Faz com que a imagem e o título ocupem toda a largura disponível */
+  font-weight: 600; /* Define o peso da fonte como semi-negrito */
+  margin-bottom: 24px; /* Adiciona margem inferior à imagem e ao título */
+}
+
+footer nav a {
+  color: #263138; /* Define a cor do texto dos links no rodapé */
+  display: block; /* Faz com que os links ocupem toda a largura disponível */
+  margin-bottom: 16px; /* Adiciona margem inferior aos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+footer p {
+  margin-bottom: 16px; /* Adiciona margem inferior aos parágrafos no rodapé */
+  max-width: 350px; /* Define a largura máxima dos parágrafos no rodapé */
+}
+
+footer p a {
+  color: #263138; /* Define a cor do texto dos links dentro dos parágrafos do rodapé */
+  text-decoration: none; /* Remove o sublinhado dos links dentro dos parágrafos */
+}
+
+#copyright {
+  background-color: #263138; /* Define a cor de fundo do copyright */
+  color: #FFFFFF; /* Define a cor do texto do copyright como branco */
+  padding: 24px; /* Adiciona padding ao copyright */
+  text-align: center; /* Centraliza o texto do copyright */
+}
+
+#copyright a {
+  color: #FF9A6C; /* Define a cor do texto dos links no copyright */
+}
+
+
+
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-flutuante {
+  position: fixed; /* Fixa a posição do botão na tela */
+  bottom: 20px; /* Distância do botão do fundo da tela */
+  right: 20px; /* Distância do botão da direita da tela */
+  background: linear-gradient(135deg, #25D366, #128C7E); /* Gradiente para o fundo do botão */
+  border-radius: 50%; /* Torna o botão redondo */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+  padding: 15px; /* Espaçamento interno do botão */
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Estilo para a imagem dentro do botão */
+.whatsapp-flutuante img {
+  width: 50px; /* Largura do ícone do WhatsApp */
+  height: 50px; /* Altura do ícone do WhatsApp */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.whatsapp-flutuante:hover {
+  background: linear-gradient(135deg, #128C7E, #25D366); /* Inverte o gradiente ao passar o mouse */
+  transform: scale(1.1); /* Aumenta levemente o tamanho do botão ao passar o mouse */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
+}
